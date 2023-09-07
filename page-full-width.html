@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+<!-- Comment: I noticed the sticky navigator needed some adjustment for when the user scrolls to the footer. -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,14 +13,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@notredame">
   <meta name="twitter:creator" content="@ndwebteam">
-  <meta name="twitter:image" property="og:image" content="https://static.nd.edu/images/webclips/default/webclip-1024.png">
+  <meta name="twitter:image" property="og:image"
+    content="https://static.nd.edu/images/webclips/default/webclip-1024.png">
   <meta property="og:description" name="description" content="Page description.">
   <meta property="og:site_name" content="Notre Dame Web Theme">
   <meta property="og:title" content="Notre Dame Web Theme">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://site_url">
   <meta property="og:locale" content="en_US">
-  <title>Page Title | Site Name | University of Notre Dame</title>
+  <title>Interactive Quality Assurance Checklist | Web Content Strategist Candidate: Elisejane C. Plecnik | University
+    of Notre Dame</title>
   <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="https://static.nd.edu/images/monogram/monogram.svg" type="image/svg+xml">
@@ -27,7 +30,10 @@
   <meta name="theme-color" content="#002b5c">
   <link rel="stylesheet" type="text/css" href="https://conductor.nd.edu/stylesheets/themes/ndt/3.0/ndt.css" />
   <link rel="stylesheet" href="./stylesheets/site.css">
+  <!-- Added the Bulma Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
+
 <body vocab="https://schema.org/" class="nav-top-true full-width">
   <!-- Skip links -->
   <nav class="skip-links" aria-label="Skip links">
@@ -42,20 +48,24 @@
     <header id="header" class="site-header">
       <p class="mark-header"><a href="https://www.nd.edu/">University of Notre Dame</a></p>
       <div class="site-title-group">
-        <p id="site-title" class="site-title"><a href="/" accesskey="1" title="Homepage shortcut key = 1">Site Name</a></p>
+        <p id="site-title" class="site-title"><a href="/" accesskey="1" title="Homepage shortcut key = 1">Interactive
+            Quality Assurance Checklist</a></p>
       </div>
       <!-- Header Search/Nav  -->
       <div class="nav-header">
         <nav id="nav-top" class="nav-top" role="navigation" aria-label="Primary navigation">
           <div id="primary">
             <ul>
-              <li><a href="/" aria-label="Home"><svg class="icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use></svg></a></li>
-              <li><a class="active" href="#">Page A</a></li>
-              <li><a href="#">Page B</a></li>
-              <li><a href="#">Page C</a></li>
-              <li class="nav-search"><button class="btn-search search-toggle" aria-label="Toggle search"><svg class="icon" width="16" height="16"><use xlink:href="#icon-search"></use></svg></button></li>
+              <li><a href="./home.html" aria-label="Home"><svg class="icon" width="16" height="16">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use>
+                  </svg></a></li>
+              <li><a href="./home.html">Web Content Strategist Candidate</a></li>
+              <li class="nav-search"><button class="btn-search search-toggle" aria-label="Toggle search"><svg
+                    class="icon" width="16" height="16">
+                    <use xlink:href="#icon-search"></use>
+                  </svg></button></li>
             </ul>
-            <div class="nav-search-wrapper">
+            <!-- <div class="nav-search-wrapper">
               <form method="get" action="/search/" id="search-nav-top" class="search-form" role="search" aria-label="Site search">
                 <input type="hidden" name="as_sitesearch" value="siteurl.nd.edu">
                 <input type="hidden" name="entqr" value="3">
@@ -64,40 +74,150 @@
                 <button class="search-close search-toggle" aria-label="Close Search"><svg class="icon" width="16" height="16"><use xlink:href="#icon-close"></use></svg></button>
               </form>
             </div>
-          </div>
+          </div> -->
         </nav>
       </div>
       <!-- Mobile Navbar -->
       <div class="nav-mobile-util">
         <ul class="no-bullets">
-          <li><a href="/"><svg class="icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use></svg> Home</a></li>
-          <li><button class="btn-search search-toggle"><svg class="icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg> Search</button></li>
-          <li><a href="#nav" class="nav-menu nav-skip"><svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve"><line class="ni ni1" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="0.98" y1="2" x2="18.94" y2="2" /><line class="ni ni2" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="0.98" y1="8.69" x2="18.94" y2="8.69" /></svg><span class="ni ni3">Menu</span></a></li>
+          <li><a href="/"><svg class="icon" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use>
+              </svg> Home</a></li>
+          <li><button class="btn-search search-toggle"><svg class="icon" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+              </svg> Search</button></li>
+          <li><a href="#nav" class="nav-menu nav-skip"><svg version="1.1" class="icon"
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
+                <line class="ni ni1" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="0.98" y1="2"
+                  x2="18.94" y2="2" />
+                <line class="ni ni2" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="0.98" y1="8.69"
+                  x2="18.94" y2="8.69" />
+              </svg><span class="ni ni3">Menu</span></a></li>
         </ul>
         <div class="nav-search-wrapper">
-          <form method="get" action="/search/" id="search-navbar-mobile" class="search-form" role="search" aria-label="Site search">
+          <form method="get" action="/search/" id="search-navbar-mobile" class="search-form" role="search"
+            aria-label="Site search">
             <input type="hidden" name="as_sitesearch" value="">
             <input type="hidden" name="entqr" value="3">
-            <input type="search" name="q" class="search-input" id="search-input-navbar-mobile" placeholder="Search this site" title="type your search term" aria-label="Site Search input">
-            <button class="search-button" type="submit" aria-label="Search"><svg class="icon" width="16" height="16"><use xlink:href="#icon-search"></use></svg></button>
-            <button class="search-close search-toggle" aria-label="Close Search"><svg class="icon" width="16" height="16"><use xlink:href="#icon-close"></use></svg></button>
+            <input type="search" name="q" class="search-input" id="search-input-navbar-mobile"
+              placeholder="Search this site" title="type your search term" aria-label="Site Search input">
+            <button class="search-button" type="submit" aria-label="Search"><svg class="icon" width="16" height="16">
+                <use xlink:href="#icon-search"></use>
+              </svg></button>
+            <button class="search-close search-toggle" aria-label="Close Search"><svg class="icon" width="16"
+                height="16">
+                <use xlink:href="#icon-close"></use>
+              </svg></button>
           </form>
         </div>
       </div>
     </header>
-    <!-- Site Content -->
+    <!-- Breadcrumbs -->
     <div id="content" class="site-content">
       <div class="page-header"></div>
       <main class="page-main block-center" role="main">
         <ol class="breadcrumbs">
-          <li><a href="/">Home</a> › </li>
-          <li><a href="#">Parent</a> › </li>
-          <li>Page Title</li>
+          <li><a href="./home.html">Home</a> › </li>
+          <li><a href="./home.html">Web Content Strategist Candidate</a> › </li>
+          <li>Interactive Quality Assurance Checklist</li>
         </ol>
-        <h1 class="page-title">Page Title</h1>
+        <h1 class="page-title">Interactive Quality Assurance Checklist</h1>
         <!-- Page Content -->
-        <p>Main page content...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cupit enim dícere nihil posse ad beatam vitam deesse sapienti. Ita prorsus, inquam; Respondeat totidem verbis. Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Non quaero, quid dicat, sed quid convenienter possit rationi et sententiae suae dicere. Gracchum patrem non beatiorem fuisse quam fillum, cum alter stabilire rem publicam studuerit, alter evertere. Duo Reges: constructio interrete. Dicam, inquam, et quidem discendi causa magis, quam quo te aut Epicurum reprehensum velim. </p>
+        <article class="message is-warning">
+          <div class="message-body">
+            The intent for this page serves as an example for a scenario between the Web Content Strategist and ND
+            campus partner, and/or ND Creative team member to actively refer to when going through the Quality Assurance
+            (QA) checklist. The QA checklist is derived from its parent <a
+              href="https://conductor.nd.edu/user-guide/resources/quality-assurance-checklist/"
+              target="_blank">page.</a> This page utilizes the 'page-full-width.html' from the Notre Dame Website
+            template and customizes this page using Cascading Stylesheets (CSS). To keep the process efficient, a CSS
+            framework called, "Bulma" was initialized via content delivery network (CDN).
+          </div>
+        </article>
+
+        <div class="tabs">
+          <ul>
+            <li class="is-active"><a href="./page-full-width.html">All</a></li>
+            <li><a href="./page-full-width-structure.html">Structure</a></li>
+            <li><a href="./page-full-width-links.html">Links & Buttons</a></li>
+            <li><a href="./page-full-width-formatting.html">Formatting</a></li>
+            <li><a href="./page-full-width-images.html">Images</a></li>
+            <li><a href="./page-full-width-metadata.html">Metadata</a></li>
+          </ul>
+        </div>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Links and buttons provide context for the destination. ("Click here" should not be used as link text.)
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Links and buttons use actions words whenever possible.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Avoid large fields of text. Use short paragraphs and limit the number of paragraphs on a single page.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Use headings consistently and appropriately.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Use lists appropriately.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Bold and italics should be used sparingly. Underline should not be applied manually.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Each page should have a meta description.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          The site should have a meta description.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Standard images are 80k or less.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Image descriptions and document descriptions are clear and useful.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Acronyms are defined on first use.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Footer includes (at least) a phone number and email address.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          There are no blank, published pages.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Check spelling on all pages.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Document links indicate file size and file type. Example: Link (1.5MB PDF)
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Links are working.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Tables are used properly—only for data and not for layout.
+        </label>
+        <label class="is-checkbox">
+          <input type="checkbox">
+          Setup redirects for key pages, so users are not lost when the current site is retired.
+        </label>
       </main>
       <div class="page-sidebar">
         <!-- Full Nav -->
@@ -142,36 +262,51 @@
         <meta property="parentOrganization" resource="#parentorg" content="University of Notre Dame">
         <!-- Organizational Breadcrumbs -->
         <ul class="footer-breadcrumbs">
-          <li><a href="#">Parent Unit</a></li>
+          <li><a href="./home.html">Web Content Strategist Candidate (Parent Unit)</a></li>
         </ul>
-        <p><a href="/" class="site-link" property="url"><span property="name">Site Name</span></a></p>
+        <p><a href="/" class="site-link" property="url"><span property="name">Interactive Quality Assurance
+              Checklist</span></a></p>
         <div class="footer-contacts">
           <p class="contact-info">
             <span class="address" property="address" typeof="PostalAddress">
               <span property="streetAddress">Building Address</span><br>
-              <span property="addressLocality">Notre Dame</span>, <span property="addressRegion">IN</span> <span property="postalCode">46556</span> <span property="addressCountry">USA</span>
+              <span property="addressLocality">Notre Dame</span>, <span property="addressRegion">IN</span> <span
+                property="postalCode">46556</span> <span property="addressCountry">USA</span>
             </span>
-            <span class="footer-phone" property="telephone" content="+1 (574) 555-1234">Phone <a href="tel:(574)555-1234">(574) 555-1234</a></span>
+            <span class="footer-phone" property="telephone" content="+1 (574) 555-1234">Phone <a
+                href="tel:(574)555-1234">(574) 555-1234</a></span>
             <span class="footer-email" property="email"><a href="mailto:example@nd.edu">example@nd.edu</a></span>
           </p>
           <nav class="social" aria-label="Site social media navigation" vocab="">
             <ul>
               <!-- Site-specific Social Media -->
-              <li><a class="soc-facebook" href="#" rel="noopener" aria-label="Site Name on Facebook"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-facebook"></use> </svg> Facebook</a></li>
-              <li><a class="soc-twitter" href="#" rel="noopener" aria-label="Site Name on Twitter"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-twitter"></use> </svg> Twitter</a></li>
-              <li><a class="soc-instagram" href="#" rel="noopener" aria-label="Site Name on Instagram"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-instagram"></use> </svg> Instagram</a></li>
+              <li><a class="soc-facebook" href="#" rel="noopener" aria-label="Site Name on Facebook"><svg class="icon"
+                    width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg> Facebook</a></li>
+              <li><a class="soc-twitter" href="#" rel="noopener" aria-label="Site Name on Twitter"><svg class="icon"
+                    width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg> Twitter</a></li>
+              <li><a class="soc-instagram" href="#" rel="noopener" aria-label="Site Name on Instagram"><svg class="icon"
+                    width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-instagram"></use>
+                  </svg> Instagram</a></li>
             </ul>
           </nav>
         </div>
         <div property="logo" typeof="ImageObject">
           <meta property="url" content="https://static.nd.edu/images/webclips/default/webclip-60.png">
         </div>
-        <p class="copyright"><a href="https://www.nd.edu/copyright/">&copy; CURRENT YEAR</a> <a href="https://www.nd.edu">University of Notre Dame</a></p>
+        <p class="copyright"><a href="https://www.nd.edu/copyright/">&copy; 2023</a> <a
+            href="https://www.nd.edu">University of Notre Dame</a></p>
       </div>
       <div class="footer-parent" property="parentOrganization" typeof="CollegeOrUniversity" resource="#parentorg">
         <meta property="name" content="University of Notre Dame">
-        <a href="https://www.nd.edu/" class="mark-footer" property="url logo" typeof="ImageObject" aria-label="University of Notre Dame">
-          <img src="https://static.nd.edu/images/marks/gray/ndmark.svg" width="250" height="60" alt="University of Notre Dame" property="url">
+        <a href="https://www.nd.edu/" class="mark-footer" property="url logo" typeof="ImageObject"
+          aria-label="University of Notre Dame">
+          <img src="https://static.nd.edu/images/marks/gray/ndmark.svg" width="250" height="60"
+            alt="University of Notre Dame" property="url">
         </a>
         <div class="footer-parent-links">
           <nav aria-label="Footer links navigation">
@@ -182,17 +317,34 @@
               <li><a href="https://news.nd.edu/" aria-label="Notre Dame News">News</a></li>
               <li><a href="https://events.nd.edu/" aria-label="Notre Dame Events">Events</a></li>
               <li><a href="https://www.nd.edu/visit/" aria-label="Visit Notre Dame">Visit</a></li>
-              <li><a href="https://www.nd.edu/about/accessibility/" aria-label="Notre Dame Accessibility Information">Accessibility</a></li>
+              <li><a href="https://www.nd.edu/about/accessibility/"
+                  aria-label="Notre Dame Accessibility Information">Accessibility</a></li>
             </ul>
           </nav>
           <nav class="social" aria-label="Notre Dame social media navigation" vocab="">
             <ul>
               <!-- Global Social Media -->
-              <li><a class="soc-facebook" href="https://www.facebook.com/notredame/" rel="noopener" aria-label="Notre Dame on Facebook"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-facebook"></use> </svg> Facebook</a></li>
-              <li><a class="soc-twitter" href="https://twitter.com/NotreDame/" rel="noopener" aria-label="Notre Dame on Twitter"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-twitter"></use> </svg> Twitter</a></li>
-              <li><a class="soc-instagram" href="https://www.instagram.com/notredame/" rel="noopener" aria-label="Notre Dame on Instagram"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-instagram"></use> </svg> Instagram</a></li>
-              <li><a class="soc-youtube" href="https://www.youtube.com/user/NDdotEDU" rel="noopener" aria-label="Notre Dame on YouTube"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-youtube"></use> </svg> YouTube</a></li>
-              <li><a class="soc-linkedin" href="https://www.linkedin.com/school/university-of-notre-dame/" rel="noopener" aria-label="Notre Dame on LinkedIn"><svg class="icon" width="16" height="16" aria-hidden="true"> <use xlink:href="#icon-linkedin"></use> </svg> LinkedIn</a></li>
+              <li><a class="soc-facebook" href="https://www.facebook.com/notredame/" rel="noopener"
+                  aria-label="Notre Dame on Facebook"><svg class="icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg> Facebook</a></li>
+              <li><a class="soc-twitter" href="https://twitter.com/NotreDame/" rel="noopener"
+                  aria-label="Notre Dame on Twitter"><svg class="icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg> Twitter</a></li>
+              <li><a class="soc-instagram" href="https://www.instagram.com/notredame/" rel="noopener"
+                  aria-label="Notre Dame on Instagram"><svg class="icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-instagram"></use>
+                  </svg> Instagram</a></li>
+              <li><a class="soc-youtube" href="https://www.youtube.com/user/NDdotEDU" rel="noopener"
+                  aria-label="Notre Dame on YouTube"><svg class="icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg> YouTube</a></li>
+              <li><a class="soc-linkedin" href="https://www.linkedin.com/school/university-of-notre-dame/"
+                  rel="noopener" aria-label="Notre Dame on LinkedIn"><svg class="icon" width="16" height="16"
+                    aria-hidden="true">
+                    <use xlink:href="#icon-linkedin"></use>
+                  </svg> LinkedIn</a></li>
             </ul>
           </nav>
         </div>
@@ -202,4 +354,5 @@
   <script src="https://conductor.nd.edu/javascripts/themes/ndt/3.0/ndt.js"></script>
   <script src="./javascripts/site.js"></script>
 </body>
+
 </html>

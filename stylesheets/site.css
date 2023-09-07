@@ -32,3 +32,16 @@
 /* Print
 ----------------------------------------------------*/
 @media print {}
+
+#inline-font{
+   font-family: 'Great Vibes', cursive;
+   font-size: 34px;
+}
+
+.is-checkbox{
+   font-weight: normal;
+}
+
+label{
+   font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif
+}
